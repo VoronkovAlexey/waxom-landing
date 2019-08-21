@@ -1,0 +1,53 @@
+.mainBlock{
+    width: 80%;
+    margin-top: 12%;
+    margin-left: 10%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    .text-container{
+        width: 100%;
+        
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .text-item-first{
+            color: $mainPageText-color;
+            @include Medium;
+            font-size: 22pt;
+        }
+        .text-item-second{
+            color: $mainPageText-color;
+            @include ExtraBold;
+            font-size: 36pt;
+        }
+        .text-item-third{
+            text-align: center;
+            color: $mainPageText-color;
+            @include Light;
+            font-size: 10pt;
+        }
+        .getStarted{
+            margin-top: 4%;
+            background-color: $buttonBackground-color;
+            color: $mainPageTextButton-color;
+            box-shadow: none;
+            border: 0px;
+            border-bottom-style: 3px solid grey;
+            width: 140px;
+            height: 33px;
+            @include ExtraBold;
+            font-size: 8pt;
+            border-radius: 3px;
+            
+            
+        }
+        
+    }
+}
