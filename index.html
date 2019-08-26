@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="styles/css/styles.css" type="text/css" />
+    <script src="js/script.js"></script>
+    
     <title>Waxom</title>
 </head>
 <body>
@@ -31,16 +33,33 @@
         
     </div>
     <div class="mainBlock">
-        <div class="arrow"><img src="img/left_arrow.png"></div>
+        <div class="arrow"><input type="button" name="left_arrow" value="<" id="left_arrow" onclick="leftarrow(this)"></div>
         <div class="text-container">
             <div class="text-item-first">Unique and Modern Design</div>
             <div class="text-item-second">Portfolio PSD Template</div>
             <div class="text-item-third">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdi- <br> et doming id quod mazim placerat facer possim assum.</div>
             <button class="getStarted">GET STARTED</button>
         </div>
-        <div class="arrow"><img src="img/right_arrow.png"></div>
+        <div class="arrow"><input type="button" name="right_arrow" value=">" id="right_arrow" onclick="rightarrow(this)"></div>
     </div>
-  <div class="hero"><img src="img/photo.png"></div>
+
+    <div class="radiobar">
+            <input type="radio" class="galery-radio" name="galeryCheck" id="galeryCheck0" checked>
+            <input type="radio" class="galery-radio" name="galeryCheck" id="galeryCheck1">
+            <input type="radio" class="galery-radio" name="galeryCheck" id="galeryCheck2">
+    </div>
+
+        <div class="hero"></div>
+
+        
+
+    <div class="mainPageGalery">
+        
+        <img id="mainImage" src="img/photo.png" >
+
+    </div>
+
+  
 </div>
    
     

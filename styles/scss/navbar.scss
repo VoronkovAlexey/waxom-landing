@@ -3,15 +3,14 @@
     padding: 0px;
 }
 
-    
-.hero{
+.mainPageGalery{
     img{
         z-index: -1;
         width: 100%;
         position: absolute;
         bottom: 1px;
+        transition: 10ms;
     }
-    
 }
 
 .logo-container, .right-container{
@@ -32,7 +31,6 @@
     max-height: 30px;
     justify-content: space-between;
 }
-
 
 .container{
     width:60%;
@@ -59,8 +57,18 @@
         font-size: 24pt;
         vertical-align: middle;
     }
-    
-    
-    
         
+}
+
+.radiobar{
+    margin-left: 47%;
+    display: flex;
+    height: 100px;
+    width: 6%;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    .galery-radio{
+        padding-right: 3%
+    }
 }
