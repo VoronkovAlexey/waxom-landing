@@ -1,0 +1,13 @@
+@mixin button {
+    margin-top: 4%;
+    background-color: $buttonBackground-color;
+    color: $mainPageTextButton-color;
+    box-shadow: none;
+    border: 0px;
+    border-bottom-style: 3px solid grey;
+    width: 140px;
+    height: 33px;
+    @include ExtraBold;
+    font-size: 8pt;
+    border-radius: 3px;
+}

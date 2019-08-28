@@ -41,21 +41,122 @@
             font-size: 10pt;
         }
         .getStarted{
-            margin-top: 4%;
-            background-color: $buttonBackground-color;
-            color: $mainPageTextButton-color;
-            box-shadow: none;
-            border: 0px;
-            border-bottom-style: 3px solid grey;
-            width: 140px;
-            height: 33px;
+            @include button;
+        }        
+    }
+}
+
+.secondPageUpperContainer{
+    margin-top: 13%;
+    width:60%;
+    height: 250px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 20%;
+    justify-content: space-between;
+    align-items: center;
+    
+    .block1, .block2, .block3, .block4{
+        text-align: center;
+        vertical-align: middle;
+        @include Light;
+        font-size: 8pt;
+
+        h4{
             @include ExtraBold;
-            font-size: 8pt;
-            border-radius: 3px;
-            
-            
+            font-size: 14pt;
         }
-        
-        
+
+        .SecondPageIcon{
+            height: 44px;
+          
+        }
+    }
+}
+
+.secondPageMiddleContainer{
+    margin: 0%;
+    background-color: #fbfaf8;
+    height: 450px;
+    width:100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
+    vertical-align: middle;
+    .text{
+        vertical-align: middle;
+        width:60%;
+        margin-right: 20%;
+        height: 115px;
+        text-align: center;
+        @include Light;
+        font-size: 8pt;
+        h4{
+            @include Light;
+            font-size: 16pt;
+        }
+    }
+    .browsers{
+        height: 385px;
+        width:60%;
+        margin-right: 20%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: flex-end;
+    
+        #leftBrowserImg{
+            width: 62%;
+            // flex-basis: 770px;
+            z-index: 2;
+            position: relative;
+            left: 43%;
+        }
+        #centerBrowserImg{
+            width: 62%;
+            // flex-basis: 770px;
+            position: relative;
+            z-index: 4;
+        }
+        #rightBrowserImg{
+            width: 62%;
+            // flex-basis: 770px;
+            z-index: 3;
+            position: relative;
+            right: 43%;
+        }
+    }
+}
+
+
+.secondPageBottomContainer{
+    background: linear-gradient(to right, #1e1b1a, #49372c);
+    height: 100px;
+    width:100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    .subContainer{
+        width:60%;
+        display: flex;
+        justify-content: space-between;
+        .text{
+            @include Light;
+            font-size: 8pt;
+            color: #5f5856;
+            h4{
+                @include Light;
+                font-size: 16pt;
+                color: white;
+                span{
+                    color: #5f5856;
+                }
+            } 
+        }
+        .purchaseNow{
+            @include button;
+        }
     }
 }

@@ -103,12 +103,12 @@
     vertical-align: middle; }
 
 .radiobar {
-  margin-left: 47%;
+  margin-left: 48%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100px;
-  width: 6%;
+  width: 4%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-flow: row;
@@ -175,6 +175,149 @@
       font-family: 'Montserrat Light', sans-serif;
       font-size: 10pt; }
     .mainBlock .text-container .getStarted {
+      margin-top: 4%;
+      background-color: #928575;
+      color: #ffffff;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border: 0px;
+      border-bottom-style: 3px solid grey;
+      width: 140px;
+      height: 33px;
+      font-family: 'Raleway Extra Bold', sans-serif;
+      font-size: 8pt;
+      border-radius: 3px; }
+
+.secondPageUpperContainer {
+  margin-top: 13%;
+  width: 60%;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  margin-left: 20%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .secondPageUpperContainer .block1, .secondPageUpperContainer .block2, .secondPageUpperContainer .block3, .secondPageUpperContainer .block4 {
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Montserrat Light', sans-serif;
+    font-size: 8pt; }
+    .secondPageUpperContainer .block1 h4, .secondPageUpperContainer .block2 h4, .secondPageUpperContainer .block3 h4, .secondPageUpperContainer .block4 h4 {
+      font-family: 'Raleway Extra Bold', sans-serif;
+      font-size: 14pt; }
+    .secondPageUpperContainer .block1 .SecondPageIcon, .secondPageUpperContainer .block2 .SecondPageIcon, .secondPageUpperContainer .block3 .SecondPageIcon, .secondPageUpperContainer .block4 .SecondPageIcon {
+      height: 44px; }
+
+.secondPageMiddleContainer {
+  margin: 0%;
+  background-color: #fbfaf8;
+  height: 450px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  vertical-align: middle; }
+  .secondPageMiddleContainer .text {
+    vertical-align: middle;
+    width: 60%;
+    margin-right: 20%;
+    height: 115px;
+    text-align: center;
+    font-family: 'Montserrat Light', sans-serif;
+    font-size: 8pt; }
+    .secondPageMiddleContainer .text h4 {
+      font-family: 'Montserrat Light', sans-serif;
+      font-size: 16pt; }
+  .secondPageMiddleContainer .browsers {
+    height: 385px;
+    width: 60%;
+    margin-right: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+    .secondPageMiddleContainer .browsers #leftBrowserImg {
+      width: 62%;
+      z-index: 2;
+      position: relative;
+      left: 43%; }
+    .secondPageMiddleContainer .browsers #centerBrowserImg {
+      width: 62%;
+      position: relative;
+      z-index: 4; }
+    .secondPageMiddleContainer .browsers #rightBrowserImg {
+      width: 62%;
+      z-index: 3;
+      position: relative;
+      right: 43%; }
+
+.secondPageBottomContainer {
+  background: -webkit-gradient(linear, left top, right top, from(#1e1b1a), to(#49372c));
+  background: -webkit-linear-gradient(left, #1e1b1a, #49372c);
+  background: -o-linear-gradient(left, #1e1b1a, #49372c);
+  background: linear-gradient(to right, #1e1b1a, #49372c);
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .secondPageBottomContainer .subContainer {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .secondPageBottomContainer .subContainer .text {
+      font-family: 'Montserrat Light', sans-serif;
+      font-size: 8pt;
+      color: #5f5856; }
+      .secondPageBottomContainer .subContainer .text h4 {
+        font-family: 'Montserrat Light', sans-serif;
+        font-size: 16pt;
+        color: white; }
+        .secondPageBottomContainer .subContainer .text h4 span {
+          color: #5f5856; }
+    .secondPageBottomContainer .subContainer .purchaseNow {
       margin-top: 4%;
       background-color: #928575;
       color: #ffffff;
