@@ -11,3 +11,21 @@
     font-size: 8pt;
     border-radius: 3px;
 }
+
+@mixin textPageContainer {
+    .text{
+        text-align: center;
+        @include Light;
+        font-size: 8pt;
+        color: #5f5856;
+        h4{
+            @include Light;
+            font-size: 16pt;
+            color: white;
+            span{
+                color: #5f5856;
+            }
+        } 
+    }
+    
+}

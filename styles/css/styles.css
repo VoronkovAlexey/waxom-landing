@@ -191,7 +191,7 @@
 .secondPageUpperContainer {
   margin-top: 13%;
   width: 60%;
-  height: 250px;
+  height: 255px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,8 +306,10 @@
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    color: black; }
     .secondPageBottomContainer .subContainer .text {
+      text-align: center;
       font-family: 'Montserrat Light', sans-serif;
       font-size: 8pt;
       color: #5f5856; }
@@ -318,6 +320,146 @@
         .secondPageBottomContainer .subContainer .text h4 span {
           color: #5f5856; }
     .secondPageBottomContainer .subContainer .purchaseNow {
+      margin-top: 4%;
+      background-color: #928575;
+      color: #ffffff;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border: 0px;
+      border-bottom-style: 3px solid grey;
+      width: 140px;
+      height: 33px;
+      font-family: 'Raleway Extra Bold', sans-serif;
+      font-size: 8pt;
+      border-radius: 3px; }
+
+.thirdPageContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .thirdPageContainer .thirdPageUpperContainer {
+    width: 33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .thirdPageContainer .thirdPageUpperContainer .text {
+      text-align: center;
+      font-family: 'Montserrat Light', sans-serif;
+      font-size: 8pt;
+      color: #5f5856; }
+      .thirdPageContainer .thirdPageUpperContainer .text h4 {
+        font-family: 'Montserrat Light', sans-serif;
+        font-size: 16pt;
+        color: white; }
+        .thirdPageContainer .thirdPageUpperContainer .text h4 span {
+          color: #5f5856; }
+    .thirdPageContainer .thirdPageUpperContainer .text h4 {
+      color: black; }
+  .thirdPageContainer .thirdPageButtonsBarContainer {
+    width: 30%;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .thirdPageContainer .thirdPageButtonsBarContainer .button {
+      background-color: white;
+      border: 1px solid #ebebeb;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 2px;
+      color: #938575;
+      font-family: 'Montserrat Light', sans-serif;
+      font-size: 10pt; }
+    .thirdPageContainer .thirdPageButtonsBarContainer .button:hover {
+      background-color: #938575;
+      border: 1px solid #ebebeb;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 2px;
+      color: white;
+      font-family: 'Montserrat Light', sans-serif;
+      font-size: 10pt; }
+  .thirdPageContainer .thirdPageGallery {
+    height: 580px;
+    width: 65%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    margin: 0; }
+    .thirdPageContainer .thirdPageGallery .galleryImg {
+      height: 192px;
+      background-color: #000000; }
+      .thirdPageContainer .thirdPageGallery .galleryImg img {
+        width: 300px; }
+      .thirdPageContainer .thirdPageGallery .galleryImg .block {
+        width: 300px;
+        height: 80px;
+        background-color: #fbfaf8;
+        color: #bfb098;
+        text-align: center;
+        font-family: 'Montserrat Light', sans-serif;
+        font-size: 10pt; }
+        .thirdPageContainer .thirdPageGallery .galleryImg .block h5 {
+          font-family: 'Raleway Medium', sans-serif;
+          font-size: 14pt; }
+    .thirdPageContainer .thirdPageGallery .galleryImg:hover img {
+      opacity: 0.8; }
+    .thirdPageContainer .thirdPageGallery .galleryImg:hover .block {
+      background-color: #373331;
+      color: #bfb098; }
+      .thirdPageContainer .thirdPageGallery .galleryImg:hover .block h5 {
+        color: white; }
+  .thirdPageContainer .thirdPageBottomContainer {
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch; }
+    .thirdPageContainer .thirdPageBottomContainer .thirdPageButton {
       margin-top: 4%;
       background-color: #928575;
       color: #ffffff;

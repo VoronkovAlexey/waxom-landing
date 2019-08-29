@@ -46,10 +46,12 @@
     }
 }
 
+// -------------------------------------------------------------------
+
 .secondPageUpperContainer{
     margin-top: 13%;
     width:60%;
-    height: 250px;
+    height: 255px;
     display: flex;
     flex-flow: row nowrap;
     margin-left: 20%;
@@ -142,21 +144,127 @@
         width:60%;
         display: flex;
         justify-content: space-between;
-        .text{
-            @include Light;
-            font-size: 8pt;
-            color: #5f5856;
-            h4{
-                @include Light;
-                font-size: 16pt;
-                color: white;
-                span{
-                    color: #5f5856;
-                }
-            } 
-        }
+        color: black;
+        @include textPageContainer;
         .purchaseNow{
             @include button;
         }
     }
+}
+
+// -------------------------------------------------------------------
+
+.thirdPageContainer{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    
+    .thirdPageUpperContainer{
+    // border: 1px solid black;
+    width: 33%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    @include textPageContainer;
+    .text h4{
+        color: black;
+    }
+    }
+
+    .thirdPageButtonsBarContainer{
+    // border: 1px solid black;
+    width: 30%;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+        .button{
+        background-color: white;
+        border: 1px solid #ebebeb;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 2px;
+        color: #938575;
+        @include Light;
+        font-size: 10pt;
+        }
+
+        .button:hover{
+        background-color:  #938575;
+        border: 1px solid #ebebeb;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 2px;
+        color: white;
+        @include Light;
+        font-size: 10pt;
+        }
+    }
+
+    .thirdPageGallery{
+        height: 580px;
+        width: 65%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: stretch;
+        margin: 0;
+
+        .galleryImg{
+            height: 192px;
+            background-color: #000000;
+            img{
+                width: 300px;
+            }
+
+            .block{
+                width: 300px;
+                height: 80px;
+                background-color: #fbfaf8;
+                color: $brownText-color;
+                text-align: center;
+                @include Light;
+                font-size: 10pt;
+
+                h5{
+                    @include Medium;
+                    font-size: 14pt;
+                }
+            }
+        }
+
+        .galleryImg:hover{
+            img{
+                opacity: 0.8;
+            }
+            .block{
+                background-color: #373331;
+                color: $brownText-color;
+
+                h5{
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .thirdPageBottomContainer{
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-content: stretch;
+
+        .thirdPageButton{
+            @include button;
+        }
+    }
+
+    
+
 }
