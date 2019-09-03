@@ -133,7 +133,7 @@
 
 
 .secondPageBottomContainer{
-    background: linear-gradient(to right, #1e1b1a, #49372c);
+    @include background-gradient;
     height: 100px;
     width:100%;
     display: flex;
@@ -264,7 +264,97 @@
             @include button;
         }
     }
+}
 
+// -------------------------------------------------------------------
+
+.fourthPageContainer{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     
+        
+    .textVideoContainer{
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        
+        @include ExtraBold;
+        font-size: 36pt;
+        color: white;
+    }
+}
 
+.fifthPageContainer{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 70%;
+    margin-left: 15%;
+    height: 650px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    .fifthPageImg{
+        width: 45%;
+        
+    }
+
+    .fifthPageText{
+        width: 55%;
+        @include Light;
+        font-size: 12pt;
+       
+
+        h5{
+            @include Light;
+            font-size: 24pt;
+            color: black;
+        }
+
+        ul{
+            list-style-image: url(https://lh3.googleusercontent.com/qenmftUKhcPtbQspCKK9R85HG6zDIn-lp0XuXD4mdb3ZI3BTymB8e1rzmzG3YlUauRgf9Qg=s21);
+            
+            li{
+                margin-bottom: 1%;
+                margin-left: 5%;
+            }
+        }
+
+
+    }
+}
+
+.fifthPageFooter{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    @include background-gradient;
+
+    .block{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        width: 15%;
+    
+        @include ExtraBold;
+        font-size: 8pt;
+        color: $brownText-color;
+    
+        h5{
+            @include ExtraLight;
+            font-size: 26pt;
+            font-weight: 100;
+            color: white;
+        }
+      
+    }
 }

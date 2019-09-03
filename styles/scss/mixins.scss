@@ -29,3 +29,7 @@
     }
     
 }
+
+@mixin background-gradient{
+    background: linear-gradient(to right, #1e1b1a, #49372c);
+}
