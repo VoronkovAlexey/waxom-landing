@@ -82,10 +82,7 @@
                 }
             }
             .nav-item-text-logo{
-                color: $navbar-color;
-                @include Light;
-                font-size: 24pt;
-                vertical-align: middle;
+                @include logoStyles;
             }
                 
         }

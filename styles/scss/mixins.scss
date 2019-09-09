@@ -33,3 +33,10 @@
 @mixin background-gradient{
     background: linear-gradient(to right, #1e1b1a, #49372c);
 }
+
+@mixin logoStyles {
+    color: $navbar-color;
+    @include Light;
+    font-size: 24pt;
+    vertical-align: middle;
+}
