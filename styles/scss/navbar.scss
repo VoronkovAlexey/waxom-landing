@@ -8,62 +8,21 @@
     width: 100%;
 
     .firstPageContainer{
-        
+        height: 100vh;
         position: relative;
         width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-flow: column;
-
-
-        .mainPageGalery{
-            display: inline-block;
-            width: 100%;
-            position: absolute;
-            top: 0%;
-            z-index: -1;
-            img{
-                width: 100%;
-                transition: 10ms;
-            }
-        }
-
-        .logo-container, .right-container, .center-Container{
-            background-color: rgba($color: #000000, $alpha: 0.0);
-            // z-index: 2;
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-        }
-
-        .logo-container{
-            width: 20%;
-        }
-
-        .center-Container{
-            display: flex;
-            flex-flow: row nowrap;
-            width: 60%;
-            justify-content: space-between;
-        }
-
-        .right-container{
-            // margin-left: 5%;
-            width: 7%;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
-
-            .busketImg{
-                width: 100%;
-            }
-        }
+        background-image: url(../../img/photo.png);
+        background-size: cover;
 
         .container{
-            width:70%;
-            margin-top: 1%;
-            margin-bottom: 1%;
+            
+            // width:70%;
+            // margin-top: 1%;
+            // margin-bottom: 1%;
             // margin-left: 20%;
             // height:100px;
             background-color: rgba($color: #000000, $alpha: 0.0);
@@ -72,20 +31,169 @@
             flex-flow: row nowrap;
             align-items: center;
             justify-content: space-between;
+            
+
+            @media screen and (max-width: $screen_medium_to){
+                width:80%;
+                .burger-menu{
+                    order: 0;
+                    .burgerMenuButton{
+                        padding: 0px;
+                        margin: 0px;
+                        display: block;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        background-color: white;
+                        position: relative;
+
+                        span{
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,50%);
+                        }
+
+                        span,span::before,span::after{
+                            display: block;
+                            width: 20px;
+                            height: 2px;
+                            padding: 0px;
+                            margin: 0px;
+                            position: absolute;
+                            background-color:black;
+
+                        }
+
+                        span::before{
+                            padding: 0px;
+                            margin: 0px;    
+                            transform: translateY(-5px);
+                        }
+
+                        span::after{
+                            padding: 0px;
+                            margin: 0px;
+                            transform: translateY(5px);
+                        }
+
+                        span::before,span::after{
+                            // transform: translate(-50%,50%);
+                            content: '';
+                            transition: 0.5s;
+                        }
+
+                        
+                    }
+                    .burgerMenuButton_active{
+
+                        span{
+                            height: 0px;                    }
+
+                        span::before{
+                            transform: rotate(45deg);
+                            
+                        }
+
+                        span::after{
+                            transform: rotate(-45deg);
+                            
+                        }
+                    }
+                }
+            }
+            
+            @media screen and (max-width: $screen_medium_to){
+                width:90%;
+                .nav-item{
+                    color: $navbar-color;
+                    @include Light;
+                    font-size: 8pt;
+                }
+            }
+
+            @media screen and (min-width: $screen_large_from){
+                width:90%;
+                .nav-item{
+                    color: $navbar-color;
+                    @include Light;
+                    font-size: 10pt;
+                }
+            }
+
+            @media screen and (min-width: $screen_large_to){
+                width:80%;
+            }
+
             .nav-item{
                 color: $navbar-color;
                 @include Light;
                 font-size: 10pt;
-                #emptySpace{
-                    flex-basis: 160px;
-                    flex-shrink: 0;
-                }
             }
+
             .nav-item-text-logo{
                 @include logoStyles;
             }
                 
+            .logo-container, .right-container, .center-Container{
+                background-color: rgba($color: #000000, $alpha: 0.0);
+                // z-index: 2;
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+            }
+
+            .logo-container{
+                width: 20%;
+            }
+
+            .center-Container{
+               
+            
+                
+                
+            }
+
+            @media screen and (min-width: $screen_large_from){
+                
+                .center-Container{
+                    width: 60%;
+                    .navMenu{
+                        display: flex;
+                        flex-flow: row nowrap;
+                        width: 100%;
+                        justify-content: space-between;
+                    }
+                }
+            }
+
+            @media screen and (max-width: $screen_medium_to){
+                .center-Container{
+                    width: 30%;
+                    .navMenu{
+                        display: flex;
+                        flex-flow: column nowrap;
+                        width: 100%;
+                        justify-content: center;
+                        align-content: space-around;
+                    }
+                }
+            }
+            
+
+            .right-container{
+                // margin-left: 5%;
+                width: 7%;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+
+                .busketImg{
+                    width: 100%;
+                }
+            }
         }
+
+        
 
         .radiobar{
             // margin-left: 48%;

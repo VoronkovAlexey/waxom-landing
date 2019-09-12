@@ -149,7 +149,7 @@
 
     .thirdPageButtonsBarContainer{
     // border: 1px solid black;
-    width: 30%;
+    width: 40%;
     height: 50px;
     display: flex;
     flex-flow: row nowrap;
@@ -176,6 +176,20 @@
         color: white;
         @include Light;
         font-size: 10pt;
+        }
+
+        @media (min-width: $screen_large_from) {
+            .thirdPageButtonsBarContainer{
+                width: 30%;
+                height: 100px;
+            }
+        }
+
+        @media (max-width: 1250px){
+            .thirdPageButtonsBarContainer{
+                width: 10%;
+                height: 150px;
+            }  
         }
     }
 
@@ -243,6 +257,7 @@
         }
     }
 }
+
 
 // -------------------------------------------------------------------
 

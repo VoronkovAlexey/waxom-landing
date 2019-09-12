@@ -9,10 +9,10 @@
     <title>Waxom</title>
 </head>
 <body>
-    
+<!-- -----first Page-----     -->
     <div class="firstPage">
 
-        <div class="firstPageContainer">
+        <div class="firstPageContainer" id="firstPageContainer">
 
             <div class="container">
                 <div class="logo-container">
@@ -20,8 +20,16 @@
                     <div class="nav-item-text-logo" class="logo">Waxom</div>
                 </div>
 
+                
+
                 <div class="center-Container">
 
+                    <div class="burger-menu">
+                        <a href="#" id="burgerMenuButton" class="burgerMenuButton" onclick="burgerMenuButton_activate(this)">
+                            <span></span>
+                        </a>
+                    </div>
+                    <nav class="navMenu">
                         <div class="nav-item">Home</div>
                         <div class="nav-item">About US</div>
                         <div class="nav-item">Portfolio</div>
@@ -30,7 +38,7 @@
                         <div class="nav-item">Pricing</div>
                         <div class="nav-item">Short Codes</div>
                         <div class="nav-item">Contacts</div>
-
+                    </nav>
                 </div>
             
                 <div class="right-container">
@@ -56,72 +64,79 @@
                 <input type="radio" class="galery-radio" name="galeryCheck" id="galeryCheck2">
             </div>
 
-            <div class="mainPageGalery">
-                <img id="mainImage" src="img/photo.png" >
-            </div>
+            
         </div>
     </div>  
 
-    <div class="secondPageUpperContainer">
-        <div class="block1" onmouseover="Block1ImgHover(this)" onmouseout="Block1Img(this)">
-            <img class="block1Img"  id="block1Img" class="SecondPageIcon" src="img/icons/icon_1.png"><br>
-            <br><h4>Web & App Design</h4><br>
-            Nam liber tempor cum soluta nobis<br> eleifend option congue nihil imperdiet<br> doming id quod mazim.
-            <br><br><img id="line1" src="img/icons/line_1.png">
-        </div>
-        <div class="block2" onmouseover="Block2ImgHover(this)" onmouseout="Block2Img(this)">
-            <img class="block2Img" id="block2Img" class="SecondPageIcon" src="img/icons/icon_2.png"><br>
-            <br><h4>Development</h4><br>
-            Nam liber tempor cum soluta nobis<br> eleifend option congue nihil imperdiet<br> doming id quod mazim.
-            <br><br><img id="line2" src="img/icons/line_1.png">
-        </div>
-        <div class="block3" onmouseover="Block3ImgHover(this)" onmouseout="Block3Img(this)">
-            <img class="block3Img" id="block3Img" class="SecondPageIcon" src="img/icons/icon_3.png"><br>
-            <br><h4>Customization</h4><br>
-            Nam liber tempor cum soluta nobis<br> eleifend option congue nihil imperdiet<br> doming id quod mazim.
-            <br><br><img id="line3" src="img/icons/line_1.png">
-        </div>
-        <div class="block4" onmouseover="Block4ImgHover(this)" onmouseout="Block4Img(this)">
-            <img class="block4Img" id="block4Img" class="SecondPageIcon" src="img/icons/icon_4.png"><br>
-            <br><h4>Marketing</h4><br>
-            Nam liber tempor cum soluta nobis<br> eleifend option congue nihil imperdiet<br> doming id quod mazim.
-            <br><br><img id="line4" src="img/icons/line_1.png">
-        </div>
-    </div>
+    <!-- -----first Page end----- -->
 
-    <div class="secondPageMiddleContainer">
-        <div class="block">
+    <!-- -----second Page----- -->
+    <div class="secondPage">
+        <div class="secondPageUpperContainer">
+            <div class="block1" onmouseover="Block1ImgHover(this)" onmouseout="Block1Img(this)">
+                <img class="block1Img"  id="block1Img" class="SecondPageIcon" src="img/icons/icon_1.png"><br>
+                <br><h4>Web & App Design</h4><br>
+                Nam liber tempor cum soluta nobis<br> eleifend option congue nihil imperdiet<br> doming id quod mazim.
+                <br><br><img id="line1" src="img/icons/line_1.png">
+            </div>
+            <div class="block2" onmouseover="Block2ImgHover(this)" onmouseout="Block2Img(this)">
+                <img class="block2Img" id="block2Img" class="SecondPageIcon" src="img/icons/icon_2.png"><br>
+                <br><h4>Development</h4><br>
+                Nam liber tempor cum soluta nobis<br> eleifend option congue nihil imperdiet<br> doming id quod mazim.
+                <br><br><img id="line2" src="img/icons/line_1.png">
+            </div>
+            <div class="block3" onmouseover="Block3ImgHover(this)" onmouseout="Block3Img(this)">
+                <img class="block3Img" id="block3Img" class="SecondPageIcon" src="img/icons/icon_3.png"><br>
+                <br><h4>Customization</h4><br>
+                Nam liber tempor cum soluta nobis<br> eleifend option congue nihil imperdiet<br> doming id quod mazim.
+                <br><br><img id="line3" src="img/icons/line_1.png">
+            </div>
+            <div class="block4" onmouseover="Block4ImgHover(this)" onmouseout="Block4Img(this)">
+                <img class="block4Img" id="block4Img" class="SecondPageIcon" src="img/icons/icon_4.png"><br>
+                <br><h4>Marketing</h4><br>
+                Nam liber tempor cum soluta nobis<br> eleifend option congue nihil imperdiet<br> doming id quod mazim.
+                <br><br><img id="line4" src="img/icons/line_1.png">
+            </div>
+        </div>
 
-        
-            <div class="upBlock">
+        <div class="secondPageMiddleContainer">
+            <div class="block">
+
+            
+                <div class="upBlock">
+                    <div class="text">
+                        <br><br><h4>Waxom is Realization of your Ideas.</h4><br>
+                        Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam<br> processus dynamicus, qui sequitur mutationem consuetudium.<br><br>
+                    </div>
+                </div>
+
+                <div class="downBlock">
+                    <div class="browsers">
+                        <img id="leftBrowserImg" src="img/browser-left.png">
+                        <img id="centerBrowserImg" src="img/browser-center.png">
+                        <img id="rightBrowserImg" src="img/browser-right.png">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="secondPageBottomContainer">
+            <div class="subContainer">
                 <div class="text">
-                    <br><br><h4>Waxom is Realization of your Ideas.</h4><br>
-                    Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam<br> processus dynamicus, qui sequitur mutationem consuetudium.<br><br>
+                    <h4>
+                        <span>Waxom</span> Multipurpose WordPress Theme
+                    </h4>
+                    Don't Forget to Rate the Template. Thanks so much!
                 </div>
-            </div>
-
-            <div class="downBlock">
-                <div class="browsers">
-                    <img id="leftBrowserImg" src="img/browser-left.png">
-                    <img id="centerBrowserImg" src="img/browser-center.png">
-                    <img id="rightBrowserImg" src="img/browser-right.png">
-                </div>
+                <div><button class="purchaseNow">PURCHASE NOW</button></div>
             </div>
         </div>
-        
     </div>
 
-    <div class="secondPageBottomContainer">
-        <div class="subContainer">
-            <div class="text">
-                <h4>
-                    <span>Waxom</span> Multipurpose WordPress Theme
-                </h4>
-                Don't Forget to Rate the Template. Thanks so much!
-            </div>
-            <div><button class="purchaseNow">PURCHASE NOW</button></div>
-        </div>
-    </div>
+<!-- -----second Page end----- -->
+
+<!-- -----third Page----- -->
 
     <div class="thirdPageContainer">
         <div class="thirdPageUpperContainer">
@@ -209,7 +224,12 @@
                 LOAD MORE
             </button>
         </div>
+    </div>
+<!-- -----third Page end----- -->
 
+<!-- -----forth Page----- -->
+
+    <div class="forthPage">
         <div class="fourthPageContainer">
             
                 <div class="videoContainer">
@@ -223,7 +243,12 @@
                         Video Presentation
                 </div>
         </div>
+    </div>
+<!-- -----forth Page end----- -->
 
+<!-- -----fifth Page----- -->
+
+    <div class="fifthPage">
         <div class="fifthPageContainer">
 
             <div class="block">
@@ -299,239 +324,245 @@
             </div>
 
         </div>
+    </div>
+<!-- -----fifth Page end----- -->
 
-        <div class="sixthPage">
-            <div class="sixthPageContainer">
+<!-- -----sixth Page----- -->
+    <div class="sixthPage">
+        <div class="sixthPageContainer">
 
-                <div class="sixthPageTextContainer">
+            <div class="sixthPageTextContainer">
 
-                    <div><h5>Recent Posts.</h5></div><br>
-                    <div>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
+                <div><h5>Recent Posts.</h5></div><br>
+                <div>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
 
-                </div>
+            </div>
 
-                <div class="sixthPagePostsContainer">
+            <div class="sixthPagePostsContainer">
 
-                    <div class="block">
+                <div class="block">
 
-                        <div class="blockUpper">
+                    <div class="blockUpper">
 
-                            <div class="blockImg">
-                                <img src="img/sixthPage/photo_1.png" >
+                        <div class="blockImg">
+                            <img src="img/sixthPage/photo_1.png" >
 
-                                <div class="calendar">
+                            <div class="calendar">
 
-                                    <div class="bg1"><img src="img/sixthPage/bg_1.png" >
-                                        <div class="date">30</div>
-                                    </div>
-                                
-                                    <div class="bg2"><img src="img/sixthPage/bg_2.png" >
-                                        <div class="month">Sep.</div>
-                                    </div>
-                                
+                                <div class="bg1"><img src="img/sixthPage/bg_1.png" >
+                                    <div class="date">30</div>
                                 </div>
-
-                            </div>
-
-                            <div class="blockText">
-
-                                <div><h4>Lorem ipsum dolor sit amet</h4></div><br>
-                                <div><h5>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</h5></div><br>
-                                <div class="arrow">
-                                    <div><h6>Read More</h6></div>
-                                    <div><img src="img/sixthPage/arrow_Href.png" ></div>
-                                </div>
-
-                            </div>
-                        </div>
-                        
-                    </div>
-    <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
-                    <div class="block">
-
-                        <div class="blockUpper">
-
-                            <div class="blockImg">
-                                <img src="img/sixthPage/photo_2.png" >
-
-                                <div class="calendar">
-
-                                    <div class="bg1">
-                                        <img src="img/sixthPage/bg_1.png" >
-                                        <div class="date">11</div>
-                                    </div>
-                                
-                                    <div class="bg2">
-                                        <img src="img/sixthPage/bg_2.png" >
-                                        <div class="month">Oct.</div>
-                                    </div>
-                                
-                                </div>
-
-                            </div>
-
-                            <div class="blockText">
-
-                                <div><h4>Lorem ipsum dolor sit amet</h4></div><br>
-                                <div><h5>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</h5></div><br>
-                                <div class="arrow">
-                                    <div><h6>Read More</h6></div>
-                                    <div><img src="img/sixthPage/arrow_Href.png" ></div>
-                                </div>
-
-                            </div>
-                            </div>
-                        
-                    </div>
-    <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
-                    <div class="block">
-
-                        <div class="blockUpper">
-
-                            <div class="blockImg">
-                                <img src="img/sixthPage/photo_3.png" >
-
-                                <div class="calendar">
-
-                                    <div class="bg1">
-                                        <img src="img/sixthPage/bg_1.png" >
-                                        <div class="date">17</div>
-                                    </div>
-                                
-                                    <div class="bg2">
-                                        <img src="img/sixthPage/bg_2.png" >
-                                        <div class="month">Nov.</div>
-                                    </div>
-                                
-                                </div>
-
-                            </div>
-
-                            <div class="blockText">
-
-                                <div><h4>Lorem ipsum dolor sit amet</h4></div><br>
-                                <div><h5>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</h5></div><br>
-                                <div class="arrow">
-                                    <div><h6>Read More</h6></div>
-                                    <div><img src="img/sixthPage/arrow_Href.png" ></div>
-                                </div>
-
-                            </div>
                             
+                                <div class="bg2"><img src="img/sixthPage/bg_2.png" >
+                                    <div class="month">Sep.</div>
+                                </div>
+                            
+                            </div>
+
+                        </div>
+
+                        <div class="blockText">
+
+                            <div><h4>Lorem ipsum dolor sit amet</h4></div><br>
+                            <div><h5>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</h5></div><br>
+                            <div class="arrow">
+                                <div><h6>Read More</h6></div>
+                                <div><img src="img/sixthPage/arrow_Href.png" ></div>
+                            </div>
+
                         </div>
                     </div>
-
-                </div>
-
                     
-
-                <div class="sixthPageButtonsContainer">
-                    <div class="left"><img src="img/sixthPage/left_Arrow.png"></div>
-                    <div class="right"><img src="img/sixthPage/right_Arrow.png"></div>
                 </div>
+    <!-- -----block----- -->
+                <div class="block">
+
+                    <div class="blockUpper">
+
+                        <div class="blockImg">
+                            <img src="img/sixthPage/photo_2.png" >
+
+                            <div class="calendar">
+
+                                <div class="bg1">
+                                    <img src="img/sixthPage/bg_1.png" >
+                                    <div class="date">11</div>
+                                </div>
+                            
+                                <div class="bg2">
+                                    <img src="img/sixthPage/bg_2.png" >
+                                    <div class="month">Oct.</div>
+                                </div>
+                            
+                            </div>
+
+                        </div>
+
+                        <div class="blockText">
+
+                            <div><h4>Lorem ipsum dolor sit amet</h4></div><br>
+                            <div><h5>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</h5></div><br>
+                            <div class="arrow">
+                                <div><h6>Read More</h6></div>
+                                <div><img src="img/sixthPage/arrow_Href.png" ></div>
+                            </div>
+
+                        </div>
+                        </div>
+                    
+                </div>
+<!-- -----block----- -->
+                <div class="block">
+
+                    <div class="blockUpper">
+
+                        <div class="blockImg">
+                            <img src="img/sixthPage/photo_3.png" >
+
+                            <div class="calendar">
+
+                                <div class="bg1">
+                                    <img src="img/sixthPage/bg_1.png" >
+                                    <div class="date">17</div>
+                                </div>
+                            
+                                <div class="bg2">
+                                    <img src="img/sixthPage/bg_2.png" >
+                                    <div class="month">Nov.</div>
+                                </div>
+                            
+                            </div>
+
+                        </div>
+
+                        <div class="blockText">
+
+                            <div><h4>Lorem ipsum dolor sit amet</h4></div><br>
+                            <div><h5>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</h5></div><br>
+                            <div class="arrow">
+                                <div><h6>Read More</h6></div>
+                                <div><img src="img/sixthPage/arrow_Href.png" ></div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
 
                 
 
+            <div class="sixthPageButtonsContainer">
+                <div class="left"><img src="img/sixthPage/left_Arrow.png"></div>
+                <div class="right"><img src="img/sixthPage/right_Arrow.png"></div>
             </div>
 
-            <div class="sixthPageFooter">
+            
 
-                <div class="sixthPageBottomContainer">
+        </div>
 
-                        <img src="img/sixthPage/background.png">
+        <div class="sixthPageFooter">
 
-                    <div class="logoContainer">
-                        <div><img src="img/sixthPage/logo-01.png"></div>
-                        <div><img src="img/sixthPage/logo-02.png"></div>
-                        <div><img src="img/sixthPage/logo-03.png"></div>
-                        <div><img src="img/sixthPage/logo-04.png"></div>
-                    </div>
+            <div class="sixthPageBottomContainer">
 
+                    <img src="img/sixthPage/background.png">
+
+                <div class="logoContainer">
+                    <div><img src="img/sixthPage/logo-01.png"></div>
+                    <div><img src="img/sixthPage/logo-02.png"></div>
+                    <div><img src="img/sixthPage/logo-03.png"></div>
+                    <div><img src="img/sixthPage/logo-04.png"></div>
                 </div>
 
             </div>
 
-            <div class="footer">
+        </div>
+    </div>
+<!-- -----sixth Page end----- -->
 
-                <div class="footerContainer">
+<!-- -----footer Page----- -->
+    <div class="footer">
 
-                    <div class="block1">
-                        <div class="container1">
-                            <div class="nav-item" class="logo"><img class="logoImg" src="img/logos.png"></div>
-                            <div class="nav-item-text-logo" class="logo">Waxom</div>
-                        </div>
-                        <div class="container2">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
-                            nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-                            Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis 
-                            claritatem.
-                        </div>
-                        <div class="container3">
-                            <div><h6>Read More</h6></div>
-                            <div><img src="img/sixthPage/arrow_Href.png" ></div>
-                        </div>
-                    </div>
+        <div class="footerContainer">
 
-                    <div class="block2">
-                        <div class="container1">
-                            <div class="footerTitle">Recent Posts</div>
-                        </div>
-                        <div class="container2">
-                            <h4>September 08, 2015</h4>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                        </div>
-                         
-                        <div class="container2">
-                            <h4>September 17, 2016</h4>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                        </div>
-                         
-                        <div class="container2">
-                            <h4>October 24, 2016</h4>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                        </div>
-                    </div>
-                    <div class="block3">
-                        <div class="container1">
-                            <div class="footerTitle">Our Twitter</div>
-                        </div>
-                        <div class="container2">
-                                <span>@waxom</span> Cum soluta nobis eleifend option congue nihil imperdiet doming
-                            <h4>5 minutes ago</h4>
-                        </div>
-                            
-                        <div class="container2">
-                                Mirum est <span>#envato</span> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum
-                            <h4>1 hour aro</h4>
-                        </div>
-                            
-                        <div class="container2">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                            <h4>at 9:30 a.m.</h4>
-                        </div>
-                    </div>
-                    <div class="block4">
-                            <div class="container1">
-                                <div class="footerTitle">Dribble Widget</div>
-                            </div>
-                            <div class="container2">
-                                <div><img src="img/footer/photo-3.png" ></div>
-                                <div><img src="img/footer/photo-2.png" ></div>
-                                <div><img src="img/footer/photo-1.png" ></div>
-                                <div><img src="img/footer/photo.png" ></div>
-                            </div>
-                            
-                    </div>
-
+            <div class="block1">
+                <div class="container1">
+                    <div class="nav-item" class="logo"><img class="logoImg" src="img/logos.png"></div>
+                    <div class="nav-item-text-logo" class="logo">Waxom</div>
                 </div>
-
+                <div class="container2">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
+                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                    Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis 
+                    claritatem.
+                </div>
+                <div class="container3">
+                    <div><h6>Read More</h6></div>
+                    <div><img src="img/sixthPage/arrow_Href.png" ></div>
+                </div>
             </div>
-        </div>    
+
+            <div class="block2">
+                <div class="container1">
+                    <div class="footerTitle">Recent Posts</div>
+                </div>
+                <div class="container2">
+                    <h4>September 08, 2015</h4>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                </div>
+                    
+                <div class="container2">
+                    <h4>September 17, 2016</h4>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                </div>
+                    
+                <div class="container2">
+                    <h4>October 24, 2016</h4>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                </div>
+            </div>
+            <div class="block3">
+                <div class="container1">
+                    <div class="footerTitle">Our Twitter</div>
+                </div>
+                <div class="container2">
+                        <span>@waxom</span> Cum soluta nobis eleifend option congue nihil imperdiet doming
+                    <h4>5 minutes ago</h4>
+                </div>
+                    
+                <div class="container2">
+                        Mirum est <span>#envato</span> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum
+                    <h4>1 hour aro</h4>
+                </div>
+                    
+                <div class="container2">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                    <h4>at 9:30 a.m.</h4>
+                </div>
+            </div>
+            <div class="block4">
+                    <div class="container1">
+                        <div class="footerTitle">Dribble Widget</div>
+                    </div>
+                    <div class="container2">
+                        <div><img src="img/footer/photo-3.png" ></div>
+                        <div><img src="img/footer/photo-2.png" ></div>
+                        <div><img src="img/footer/photo-1.png" ></div>
+                        <div><img src="img/footer/photo.png" ></div>
+                    </div>
+                    
+            </div>
+
+        </div>
+
+    </div>
+         
 </div>
         
 
-    <!-- </div>
-</div> -->
+
+<!-- -----footer Page end----- -->
    
     
 </body>

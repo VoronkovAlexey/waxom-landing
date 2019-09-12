@@ -1,27 +1,25 @@
-var imgList = new Array("img/photo.png","img/photo2.jpg","img/photo3.jpg");
+var imgList = new Array("url(img/photo.png)","url(img/photo2.jpg)","url(img/photo3.jpg)");
 var index = 0;
 function leftarrow(){
     index--;
     if (index < 0) {
         index = imgList.length - 1;
     }
-    document.getElementById("mainImage").src = imgList[index];
-    // document.getElementById("mainImage").slideRight = imgList[index];
-    document.getElementById("galeryCheck"+index).checked = checked;
+    document.getElementById("firstPageContainer").style.backgroundImage = imgList[index];
+    document.getElementById("galeryCheck"+index).checked = true;
     
-}
+};
 
 function rightarrow(){
     index++;
     if (index > imgList.length - 1) {
         index = 0;
     }
-    document.getElementById("mainImage").src = imgList[index];
-    // document.getElementById("mainImage").slideLeft = imgList[index];
-    document.getElementById("galeryCheck"+index).checked = true;
-    // document.write()
     
-}
+    document.getElementById("firstPageContainer").style.backgroundImage = imgList[index];
+    document.getElementById("galeryCheck"+index).checked = true;
+    
+};
 
 function Block1ImgHover(){
     document.getElementById("block1Img").src = "img/icons/icon_1_1.png";
@@ -68,6 +66,12 @@ function Block4ImgHover(){
 function Block4Img(){
     document.getElementById("block4Img").src = "img/icons/icon_4.png";
     document.getElementById("line4").src = "img/icons/line_1.png";
+
+}
+
+function burgerMenuButton_activate(){
+    event.preventDefault;
+    document.getElementById("burgerMenuButton").classList.toggle("burgerMenuButton_active");
 
 }
 
