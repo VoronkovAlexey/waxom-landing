@@ -72,6 +72,7 @@ function Block4Img(){
 function burgerMenuButton_activate(){
     event.preventDefault;
     document.getElementById("burgerMenuButton").classList.toggle("burgerMenuButton_active");
+    document.getElementById("navMenu").classList.toggle("navMenu_active");
 
 }
 

@@ -1,0 +1,161 @@
+.secondPageUpperContainer{
+    
+    
+    width:60%;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 20%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    justify-content: space-between;
+    align-items: center;
+    
+    .block1, .block2, .block3, .block4{
+        
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        @include Light;
+        font-size: 8pt;
+        position: relative;
+
+        #line1, #line2, #line3, #line4{
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        h4{
+            @include ExtraBold;
+        }
+
+        
+        @media (max-width: $screen_small_to){
+            
+            height: 260px;
+
+            h4{
+                
+                font-size: 10pt;
+                height: 40px;
+                
+            }           
+        }
+        
+        @media (min-width: $screen_medium_from) and 
+        (max-width: $screen_medium_to){
+
+            height: 260px;
+
+            h4{
+                
+                font-size: 14pt;
+                height: 50px;
+                
+            }          
+        }
+        
+
+        @media (min-width: $screen_large_from){
+            
+            height: 230px;
+
+            h4{
+                
+                font-size: 14pt;
+                height: 40px;
+                
+            }           
+        }
+    }
+}
+
+.secondPageMiddleContainer{
+    display: inline-block;
+    width:100%;
+    margin: 0%;
+    background-color: #fbfaf8;
+
+    .block{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: flex-end;
+        vertical-align: middle;
+    }
+    
+    .upBlock{
+        display: inline-block;
+        width:60%;
+        margin-right: 20%;
+    
+        .text{
+
+            vertical-align: middle;
+            text-align: center;
+            @include Light;
+            font-size: 8pt;
+            h4{
+                @include Light;
+                font-size: 16pt;
+            }
+        }
+    }
+
+    .downBlock{
+        display: inline-block;
+        width:60%;
+        margin-right: 20%;
+
+        .browsers{
+                        
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: flex-end;
+        
+            #leftBrowserImg{
+
+                width: 62%;
+                z-index: 2;
+                position: relative;
+                left: 43%;
+            }
+            #centerBrowserImg{
+                
+                width: 62%;
+                position: relative;
+                z-index: 4;
+            }
+            #rightBrowserImg{
+
+                width: 62%;
+                z-index: 3;
+                position: relative;
+                right: 43%;
+            }
+        }
+    }
+}
+
+
+.secondPageBottomContainer{
+    @include background-gradient;
+    height: 100px;
+    width:100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    .subContainer{
+        width:60%;
+        display: flex;
+        justify-content: space-between;
+        color: black;
+        @include textPageContainer;
+        .purchaseNow{
+            @include button;
+        }
+    }
+}

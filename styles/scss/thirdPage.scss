@@ -1,0 +1,138 @@
+.thirdPageContainer{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    
+    .thirdPageUpperContainer{
+    
+    width: 33%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    @include textPageContainer;
+    .text h4{
+        color: black;
+    }
+    }
+
+    .thirdPageButtonsBarContainer{
+    
+    
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+        
+    
+        .button{
+        background-color: white;
+        border: 1px solid #ebebeb;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 2px;
+        color: #938575;
+        @include Light;
+        font-size: 10pt;
+
+        @media (max-width: $screen_large_to){
+            
+            height: 50px;
+            
+        }
+
+        @media (min-width: 1250px){
+            
+            height: 100px;
+              
+        }
+        }
+
+        .button:hover{
+        background-color:  #938575;
+        border: 1px solid #ebebeb;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 2px;
+        color: white;
+        @include Light;
+        font-size: 10pt;
+        }
+
+        
+    }
+
+    .thirdPageGallery{
+        display: inline-block;
+        width: 65%;
+        margin: 0;
+
+        .blockContainer{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-content: stretch;
+        
+            .galleryImg{
+                display: inline-block;
+                margin-bottom: 5%;
+                width: 30%;
+                background-color:white;
+                img{
+                    width: 100%;
+                }
+
+                .block{
+                    width: 100%;
+                    padding: 10%, 0, 10%, 0; 
+                    background-color: #fbfaf8;
+                    color: $brownText-color;
+                    text-align: center;
+                    @include Light;
+                    font-size: 10pt;
+
+                    h5{
+                        @include Medium;
+                        font-size: 14pt;
+                    }
+                }
+
+                .galleryBlock{
+                    display: inline-block;
+                }
+            }
+
+            .galleryImg:hover{
+
+                background-color: #000000;
+                img{
+                    opacity: 0.8;
+                }
+                .block{
+                    background-color: #373331;
+                    color: $brownText-color;
+
+                    h5{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .thirdPageBottomContainer{
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-content: stretch;
+
+        .thirdPageButton{
+            @include button;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.fifthPage{
+    display: inline-block;
+    .fifthPageContainer{
+        display: inline-block;
+        width: 70%;
+        margin-left: 15%;
+
+        .block{
+    
+            display: flex;
+            flex-flow: row nowrap;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+
+            .fifthPageImg{
+                width: 45%;
+                img{
+                    width: 100%;
+                }
+            }
+
+            .fifthPageText{
+                width: 55%;
+                @include Light;
+                font-size: 12pt;
+            
+
+                h5{
+                    @include Light;
+                    font-size: 24pt;
+                    color: black;
+                }
+
+                ul{
+                    list-style-image: url(https://lh3.googleusercontent.com/qenmftUKhcPtbQspCKK9R85HG6zDIn-lp0XuXD4mdb3ZI3BTymB8e1rzmzG3YlUauRgf9Qg=s21);
+                    
+                    li{
+                        margin-bottom: 1%;
+                        margin-left: 5%;
+                    }
+                
+
+
+                }
+            }
+        }
+    }
+
+
+    .fifthPageFooter{
+        display: inline-block;
+        width: 100%;
+        @include background-gradient;
+
+        .blockContainer{
+            margin: 15px;
+            margin-left: 15%;
+            width: 70%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            
+        
+            .block{
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                justify-content: space-around;
+                width: 10%;
+                @include ExtraBold;
+                font-size: 8pt;
+                color: $brownText-color;
+            
+                h5{
+                    @include Light;
+                    font-size: 26pt;
+                    font-weight: 100;
+                    color: white;
+                }
+            
+            }
+        }
+    }
+}

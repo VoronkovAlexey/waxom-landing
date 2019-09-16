@@ -40,3 +40,24 @@
     font-size: 24pt;
     vertical-align: middle;
 }
+
+@mixin logoStyles-desktop {
+    color: $navbar-color;
+    @include Light;
+    font-size: 16pt;
+    vertical-align: middle;
+}
+
+@mixin logoStyles-tablet {
+    color: $navbar-color;
+    @include Light;
+    font-size: 16pt;
+    vertical-align: middle;
+}
+
+@mixin logoStyles-mobile {
+    color: $navbar-color;
+    @include Light;
+    font-size: 16pt;
+    vertical-align: middle;
+}

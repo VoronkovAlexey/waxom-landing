@@ -1,0 +1,20 @@
+.fourthPageContainer{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+        
+    .textVideoContainer{
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        
+        @include ExtraBold;
+        font-size: 36pt;
+        color: white;
+    }
+}
