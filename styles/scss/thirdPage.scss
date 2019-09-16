@@ -26,9 +26,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;
-
-        
+    align-items: center; 
     
         .button{
         background-color: white;
@@ -40,15 +38,15 @@
         @include Light;
         font-size: 10pt;
 
-        @media (max-width: $screen_large_to){
+        @media (max-width: $screen_medium_from){
             
             height: 50px;
             
         }
 
-        @media (min-width: 1250px){
+        @media (min-width: 1600px){
             
-            height: 100px;
+            height: 50px;
               
         }
         }
@@ -62,9 +60,7 @@
         color: white;
         @include Light;
         font-size: 10pt;
-        }
-
-        
+        }        
     }
 
     .thirdPageGallery{

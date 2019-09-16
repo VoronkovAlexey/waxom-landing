@@ -585,12 +585,12 @@
       color: #938575;
       font-family: 'Montserrat Light', sans-serif;
       font-size: 10pt; }
-      @media (max-width: 1199px) {
+      @media (max-width: 768px) {
         .thirdPageContainer .thirdPageButtonsBarContainer .button {
           height: 50px; } }
-      @media (min-width: 1250px) {
+      @media (min-width: 1600px) {
         .thirdPageContainer .thirdPageButtonsBarContainer .button {
-          height: 100px; } }
+          height: 50px; } }
     .thirdPageContainer .thirdPageButtonsBarContainer .button:hover {
       background-color: #938575;
       border: 1px solid #ebebeb;
